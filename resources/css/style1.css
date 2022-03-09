@@ -1,0 +1,113 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 0.4cm;
+    --bgc-one: white;
+    --bgc-two: lightblue;
+    --bgc-three: lightgreen;
+    --tc-one: black;
+    --tc-two: grey;
+    background-color: var(--bgc-one);
+}
+body{
+    display: grid;
+    grid-template-rows: 2.5cm 1fr;
+    grid-template-columns: 2.5cm 5cm 1fr;
+    margin: 0;
+    height: 100vh;
+}
+header{
+    grid-area: 1 / 2 / 2 / -1;
+    background-color: var(--bgc-two);
+}
+#sidebar{
+    grid-area: 1 / 1 / -1 / 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: aqua;
+    
+}
+.--sidebar-clickable{
+    display: inline-block;
+    width: 100%;
+    height: 3cm;
+}
+.--sidebar-clickable-icon{
+    width: 100%;
+    aspect-ratio: 1 / 1;
+}
+.--sidebar-clickable-text{
+    width: 5cm;
+    height: 3cm;
+    padding: auto 0;
+    display: none;
+}
+svg{
+    height: 100%;
+    width: 100%;
+}
+main{
+    grid-area: 2 / 2 / -1 / -1;
+    overflow-y: scroll;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+::-webkit-scrollbar{
+    background-color: hsla(120, 100%, 25%, 0.5);/*change later to a VAR */
+}
+.card{
+    height: 16cm;
+    width: 12cm;
+    border: 0.1cm solid black;
+    display: inline-block;
+    margin: 0.6cm;
+    flex-shrink: 0;
+}
+.--card-h {
+    border-bottom: 0.06cm solid black;
+    width: 100%;
+    height: 1.3cm;
+    background-color: var(--bgc-three);
+    display: grid;
+    grid-template-columns: 1.3cm 1fr 2cm;
+    grid-template-rows: 1fr;
+}
+.--card-h-newtab{
+    grid-area: 1 / 1 / 2 / 2;
+}
+.--card-h-title{
+    grid-area: 1 / 2 / 2 / 3;
+    text-align: center;
+    font-size: 2rem;
+}
+.--card-h-x {
+    grid-area: 1 / 3 / 2 / -1;
+}
+.--card-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 14.6cm;/*card minus card-h*/
+    overflow-y: scroll;
+    padding: 0.4cm 0;
+    
+}
+.--card-container-content{
+    width: 90%;
+    height: 10%;
+    border: 0.06cm solid black;
+    margin: 0.2cm;
+    flex-shrink: 0;
+}
+.--card-container-content-icon{
+    height: 100%;
+    aspect-ratio: 1/1;
+    border-right: 0.03cm solid black;
+}
+
