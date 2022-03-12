@@ -10,6 +10,7 @@ html{
     --bgc-three: lightgreen;
     --tc-one: black;
     --tc-two: grey;
+    --large-border: 0.1cm solid black;
     background-color: var(--bgc-one);
     font-family: 'Montserrat', sans-serif;
 }
@@ -19,6 +20,7 @@ body{
     grid-template-columns: 2.5cm 5cm 1fr;
     margin: 0;
     height: 100vh;
+    gap: 1rem;
 }
 header{
     grid-area: 1 / 2 / 2 / -1;
@@ -26,7 +28,8 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-
+    border: var(--large-border);
+    border-top: none;
 }
 h1{
     font-size: 3rem;
@@ -42,14 +45,11 @@ h1{
     border: solid black 0.07cm;
     overflow: hidden;
 }
-#search-bar > *{
-    display: inline-block !important;
-}
+
 #--search-bar-icon{
     height: 100%;
     aspect-ratio: 1 / 1;
     background-color: var(--bgc-three);
-    
 }
 #--search-bar-input{
     width: 40vw;
@@ -70,7 +70,9 @@ h1{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background-color: aqua;
+    background-color: var(--bgc-three);
+    border: var(--large-border);
+    border-top: none;
     
 }
 .--sidebar-clickable{
@@ -94,7 +96,7 @@ h1{
     display: none;
 }
 .svg-container{
-    display: flex;
+    display: flex !important;
     justify-content: center;
     align-items: center;
     height: 100%;
@@ -118,7 +120,7 @@ main{
 .card{
     height: 16cm;
     width: 12cm;
-    border: 0.1cm solid black;
+    border: var(--large-border);
     display: inline-block;
     margin: 0.6cm;
     flex-shrink: 0;

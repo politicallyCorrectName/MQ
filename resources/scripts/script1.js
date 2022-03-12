@@ -44,7 +44,8 @@ const sidebarClickables = document.getElementsByClassName('--sidebar-clickable')
 
 for(let i = 0 ; i < sidebarClickables.length ; i += 1){
     sidebarClickables[i].onclick = ((e) => {
-        let id = sidebarClickables[i].id;
+        let cE = sidebarClickables[i];
+        let id = cE.id;
         
         console.log(id);
         createCard(id);
