@@ -1,8 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+
 <html>
     <head>
         <meta charset="utf-8">
@@ -21,46 +18,50 @@
         <header>
             <h1>DirectionQuantified</h1>
             <div id="search-bar">
-                <div id="--search-bar-icon" class="svg-container">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M507.3 484.7l-141.5-141.5C397 306.8 415.1 259.7 415.1 208c0-114.9-93.13-208-208-208S-.0002 93.13-.0002 208S93.12 416 207.1 416c51.68 0 98.85-18.96 135.2-50.15l141.5 141.5C487.8 510.4 491.9 512 496 512s8.188-1.562 11.31-4.688C513.6 501.1 513.6 490.9 507.3 484.7zM208 384C110.1 384 32 305 32 208S110.1 32 208 32S384 110.1 384 208S305 384 208 384z"/></svg>
+                <div title="search" id="--search-bar-icon" class="svg-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M507.3 484.7l-141.5-141.5C397 306.8 415.1 259.7 415.1 208c0-114.9-93.13-208-208-208S-.0002 93.13-.0002 208S93.12 416 207.1 416c51.68 0 98.85-18.96 135.2-50.15l141.5 141.5C487.8 510.4 491.9 512 496 512s8.188-1.562 11.31-4.688C513.6 501.1 513.6 490.9 507.3 484.7zM208 384C110.1 384 32 305 32 208S110.1 32 208 32S384 110.1 384 208S305 384 208 384z"/></svg>
                 </div>
                 <input id="--search-bar-input"></inp>
             </div>
-            <div id="account-icon" class="svg-container"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M320 32c61.76 0 112 50.24 112 112c0 34.85-16.33 65.64-41.37 86.2l25.62 20.22c29.12-26.35 47.75-64.06 47.75-106.4c0-79.53-64.47-143.1-143.1-143.1c-54.45 0-101.3 30.58-125.7 75.16l25.4 20.05C237.9 57.95 275.8 32 320 32zM96 480c0-70.58 57.42-128 128-128h114.3L297.8 320l-73.78 .0006c-88.36 0-160 71.63-160 159.1C63.1 497.7 78.33 512 95.1 512h444.1l-40.53-32H96zM633.9 483.4l-608-480c-6.938-5.453-17-4.25-22.48 2.641c-5.469 6.938-4.281 17 2.641 22.48l608 480C617 510.9 620.5 512 623.1 512c4.734 0 9.422-2.094 12.58-6.078C642 498.1 640.8 488.9 633.9 483.4z"/></svg>
+            <div title="account" id="account" class="svg-container">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M630.8 469.1l-249.5-195.5c48.66-23.06 82.65-72.14 82.65-129.6c0-79.53-64.47-143.1-143.1-143.1c-69.57 0-127.6 49.34-141.1 114.9L38.81 5.109C34.41 1.672 29.19 0 24.03 0C16.91 0 9.845 3.156 5.127 9.187C-3.061 19.62-1.248 34.72 9.189 42.89L601.2 506.9c10.5 8.203 25.56 6.328 33.69-4.078C643.1 492.4 641.2 477.3 630.8 469.1zM224.7 150.8C224.5 148.5 224 146.3 224 144c0-52.94 43.07-96 96-96c52.94 0 96 43.06 96 96c0 47.32-34.49 86.51-79.61 94.34L224.7 150.8zM113.1 464c7.787-54.21 54.54-96 110.9-96h122.2l-61.26-47.1l-60.9-.0002c-88.36 0-160 71.63-160 159.1C63.1 497.7 78.33 512 95.1 512l433.9-.0052L468.6 464H113.1z"/></svg>
+            </div>
+            <div title="settings" id="settings" class="svg-container">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M119.1 176C119.1 153.9 137.9 136 159.1 136C182.1 136 199.1 153.9 199.1 176C199.1 198.1 182.1 216 159.1 216C137.9 216 119.1 198.1 119.1 176zM207.3 23.36L213.9 51.16C223.4 55.3 232.4 60.5 240.6 66.61L267.7 58.52C273.2 56.85 279.3 58.3 283.3 62.62C299.5 80.44 311.9 101.8 319.3 125.4C321.1 130.9 319.3 136.9 315.1 140.9L294.1 160C295.7 165.5 295.1 171.1 295.1 176.8C295.1 181.1 295.7 187.1 295.2 192.1L315.1 211.1C319.3 215.1 321.1 221.1 319.3 226.6C311.9 250.2 299.5 271.6 283.3 289.4C279.3 293.7 273.2 295.2 267.7 293.5L242.1 285.8C233.3 292.5 223.7 298.1 213.5 302.6L207.3 328.6C205.1 334.3 201.7 338.8 196 340.1C184.4 342.6 172.4 344 159.1 344C147.6 344 135.6 342.6 123.1 340.1C118.3 338.8 114 334.3 112.7 328.6L106.5 302.6C96.26 298.1 86.67 292.5 77.91 285.8L52.34 293.5C46.75 295.2 40.65 293.7 36.73 289.4C20.5 271.6 8.055 250.2 .6513 226.6C-1.078 221.1 .6929 215.1 4.879 211.1L24.85 192.1C24.29 187.1 24 181.1 24 176.8C24 171.1 24.34 165.5 25.01 160L4.879 140.9C.6936 136.9-1.077 130.9 .652 125.4C8.056 101.8 20.51 80.44 36.73 62.62C40.65 58.3 46.75 56.85 52.34 58.52L79.38 66.61C87.62 60.5 96.57 55.3 106.1 51.17L112.7 23.36C114 17.71 118.3 13.17 123.1 11.91C135.6 9.35 147.6 8 159.1 8C172.4 8 184.4 9.35 196 11.91C201.7 13.16 205.1 17.71 207.3 23.36L207.3 23.36zM63.1 176.8C63.1 180.5 64.21 184.1 64.6 187.7L66.79 207.4L44.25 228.9C47.68 236.5 51.84 243.7 56.63 250.4L85.96 241.7L102.2 254C108.4 258.7 115.1 262.7 122.3 265.8L140.8 273.8L147.8 303.4C151.8 303.8 155.9 304 159.1 304C164.1 304 168.2 303.8 172.2 303.4L179.2 273.8L197.7 265.8C204.9 262.7 211.6 258.7 217.8 254L234 241.7L263.4 250.4C268.2 243.7 272.3 236.5 275.7 228.9L253.2 207.4L255.4 187.7C255.8 184.1 255.1 180.5 255.1 176.8C255.1 172.7 255.8 168.7 255.3 164.8L252.9 144.9L275.7 123.1C272.3 115.5 268.2 108.3 263.4 101.6L232.9 110.7L216.8 98.74C210.1 94.42 204.7 90.76 197.1 87.85L179.6 79.87L172.2 48.58C168.2 48.2 164.1 48 159.1 48C155.9 48 151.8 48.2 147.8 48.58L140.4 79.87L122 87.85C115.3 90.76 109 94.42 103.2 98.74L87.1 110.7L56.63 101.6C51.84 108.3 47.68 115.5 44.25 123.1L67.14 144.9L64.72 164.8C64.25 168.7 63.1 172.7 63.1 176.8L63.1 176.8zM464 312C486.1 312 504 329.9 504 352C504 374.1 486.1 392 464 392C441.9 392 424 374.1 424 352C424 329.9 441.9 312 464 312zM581.5 244.3L573.4 271.4C579.5 279.6 584.7 288.6 588.8 298.1L616.6 304.7C622.3 306 626.8 310.3 628.1 315.1C630.6 327.6 632 339.6 632 352C632 364.4 630.6 376.4 628.1 388C626.8 393.7 622.3 397.1 616.6 399.3L588.8 405.9C584.7 415.4 579.5 424.4 573.4 432.6L581.5 459.7C583.2 465.3 581.7 471.4 577.4 475.3C559.6 491.5 538.2 503.9 514.6 511.4C509.1 513.1 503.1 511.3 499.1 507.1L479.1 486.1C474.5 487.7 468.9 488 463.2 488C458 488 452.9 487.7 447.9 487.2L428.9 507.1C424.9 511.3 418.9 513.1 413.4 511.4C389.8 503.9 368.4 491.5 350.6 475.3C346.3 471.4 344.8 465.3 346.5 459.7L354.2 434.1C347.5 425.3 341.9 415.7 337.4 405.5L311.4 399.3C305.7 397.1 301.2 393.7 299.9 388C297.3 376.4 295.1 364.4 295.1 352C295.1 339.6 297.4 327.6 299.9 315.1C301.2 310.3 305.7 306 311.4 304.7L337.4 298.5C341.9 288.3 347.5 278.7 354.2 269.9L346.5 244.3C344.8 238.8 346.3 232.7 350.6 228.7C368.4 212.5 389.8 200.1 413.4 192.7C418.9 190.9 424.9 192.7 428.9 196.9L447.9 216.9C452.9 216.3 458 216 463.2 216C468.9 216 474.5 216.4 479.1 217L499.1 196.9C503.1 192.7 509.1 190.9 514.6 192.7C538.2 200.1 559.6 212.5 577.4 228.7C581.7 232.7 583.2 238.8 581.5 244.3V244.3zM463.2 256C459.5 256 455.9 256.2 452.3 256.6L432.6 258.8L411.1 236.3C403.5 239.7 396.3 243.8 389.6 248.6L398.3 277.1L385.1 294.2C381.3 300.4 377.3 307.1 374.2 314.3L366.2 332.8L336.6 339.8C336.2 343.8 336 347.9 336 352C336 356.1 336.2 360.2 336.6 364.2L366.2 371.2L374.2 389.7C377.3 396.9 381.3 403.6 385.1 409.8L398.3 426L389.6 455.4C396.3 460.2 403.5 464.3 411.1 467.8L432.6 445.2L452.3 447.4C455.9 447.8 459.5 448 463.2 448C467.3 448 471.3 447.8 475.2 447.3L495.1 444.9L516.9 467.8C524.5 464.3 531.7 460.2 538.4 455.4L529.3 424.9L541.3 408.8C545.6 402.1 549.2 396.7 552.2 389.1L560.1 371.6L591.4 364.2C591.8 360.2 592 356.1 592 352C592 347.9 591.8 343.8 591.4 339.8L560.1 332.4L552.2 314C549.2 307.4 545.6 301 541.3 295.2L529.3 279.1L538.4 248.6C531.7 243.8 524.5 239.7 516.9 236.3L495.1 259.1L475.2 256.7C471.3 256.3 467.3 256 463.2 256V256z"/></svg>
             </div>
         </header>
         <div id="sidebar">
-            <div id="arrow" class="--sidebar-clickable">
+            <div title="expand" id="expand" class="--sidebar-clickable">
                 <div class="svg-container --sidebar-clickable-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M224 256c0 1.1-.7344 3.969-2.219 5.531l-144 151.1c-3.047 3.187-8.125 3.312-11.31 .25c-3.188-3.094-3.281-8.156-.25-11.31l138.7-146.5L66.21 109.5C63.18 106.3 63.27 101.3 66.46 98.22c3.188-3.062 8.266-2.937 11.31 .25l144 151.1C223.3 252 224 254 224 256z"/></svg>
                 </div>
                 
             </div>
-            <div id="compare" class="--sidebar-clickable">
+            <div title="compare" id="compare" class="--sidebar-clickable">
                 <div class="svg-container --sidebar-clickable-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M205.4 10.08L293.4 90.08C295 91.6 296 93.75 296 96C296 98.25 295 100.4 293.4 101.9L205.4 181.9C202.1 184.9 197.1 184.7 194.1 181.4C191.1 178.1 191.3 173.1 194.6 170.1L267.3 104H176C127.4 104 88 143.4 88 192V384.5C119.6 388.4 144 415.4 144 448C144 483.3 115.3 512 80 512C44.65 512 16 483.3 16 448C16 415.4 40.43 388.4 72 384.5V192C72 134.6 118.6 88 176 88H267.3L194.6 21.92C191.3 18.95 191.1 13.89 194.1 10.62C197.1 7.35 202.1 7.109 205.4 10.08V10.08zM127.1 448C127.1 421.5 106.5 400 79.1 400C53.49 400 31.1 421.5 31.1 448C31.1 474.5 53.49 496 79.1 496C106.5 496 127.1 474.5 127.1 448zM306.6 501.9L218.6 421.9C216.1 420.4 215.1 418.3 215.1 416C215.1 413.7 216.1 411.6 218.6 410.1L306.6 330.1C309.9 327.1 314.9 327.4 317.9 330.6C320.9 333.9 320.6 338.9 317.4 341.9L244.7 408H336C384.6 408 424 368.6 424 320V127.5C392.4 123.6 368 96.64 368 64C368 28.65 396.7 0 432 0C467.3 0 496 28.65 496 64C496 96.64 471.6 123.6 440 127.5V320C440 377.4 393.4 424 336 424H244.7L317.4 490.1C320.6 493.1 320.9 498.1 317.9 501.4C314.9 504.6 309.9 504.9 306.6 501.9V501.9zM384 64C384 90.51 405.5 112 432 112C458.5 112 480 90.51 480 64C480 37.49 458.5 16 432 16C405.5 16 384 37.49 384 64z"/></svg>
                 </div>
                 <div class="--sidebar-clickable-text"></div>
             </div>
-            <div id="correlate" class="--sidebar-clickable">
+            <div title="correlate" id="correlate" class="--sidebar-clickable">
                 <div class="svg-container --sidebar-clickable-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M16 408C16 438.9 41.07 464 72 464H504C508.4 464 512 467.6 512 472C512 476.4 508.4 480 504 480H72C32.24 480 0 447.8 0 408V40C0 35.58 3.582 32 8 32C12.42 32 16 35.58 16 40V408zM325.7 293.7C322.5 296.8 317.5 296.8 314.3 293.7L224 203.3L101.7 325.7C98.53 328.8 93.47 328.8 90.34 325.7C87.22 322.5 87.22 317.5 90.34 314.3L218.3 186.3C221.5 183.2 226.5 183.2 229.7 186.3L320 276.7L466.3 130.3C469.5 127.2 474.5 127.2 477.7 130.3C480.8 133.5 480.8 138.5 477.7 141.7L325.7 293.7z"/></svg>
                 </div>
                 <div class="--sidebar-clickable-text"></div>
             </div>
-            <div id="devtools" class="--sidebar-clickable">
+            <div title="devtools" id="devtools" class="--sidebar-clickable">
                 <div class="svg-container --sidebar-clickable-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M34.24 45.55C31.17 42.37 31.27 37.3 34.45 34.24C37.63 31.17 42.7 31.27 45.76 34.45L253.8 250.5C256.7 253.5 256.7 258.5 253.8 261.5L45.76 477.5C42.7 480.7 37.63 480.8 34.45 477.8C31.27 474.7 31.17 469.6 34.24 466.5L236.9 256L34.24 45.55zM568 464C572.4 464 576 467.6 576 472C576 476.4 572.4 480 568 480H232C227.6 480 224 476.4 224 472C224 467.6 227.6 464 232 464H568z"/></svg>
                 </div>
             </div>
         </div>
-        <!--non-static content-->
+
         <main>
             <div class="card">
                 <div class="--card-h">
-                    <div class="card-h-newtab svg-container"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M400 320c-8.836 0-16 7.164-16 16V448c0 17.67-14.33 32-32 32H64c-17.67 0-32-14.33-32-32V160c0-17.67 14.33-32 32-32h112C184.8 128 192 120.8 192 112S184.8 96 176 96L64 96c-35.35 0-64 28.65-64 64V448c0 35.35 28.65 64 64 64h288c35.35 0 64-28.65 64-64v-112C416 327.2 408.8 320 400 320zM480 0h-111.1c-13 0-24.59 7.766-29.56 19.77s-2.25 25.69 6.938 34.86l44.67 44.67l-209.4 209.4c-6.25 6.25-6.25 16.38 0 22.62C183.8 334.4 187.9 336 192 336s8.188-1.562 11.31-4.688l209.4-209.4l44.68 44.68c6.156 6.125 14.28 9.375 22.59 9.375c4.125 0 8.312-.8125 12.28-2.453C504.3 168.5 512 156.1 512 143.1V32C512 14.36 497.7 0 480 0zM480 143.1l-112-111.1c0 0-.0938 0 0 0L480 32V143.1z"/></svg></div>
+                    <div title="open in new tab" class="card-h-newtab svg-container"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M400 320c-8.836 0-16 7.164-16 16V448c0 17.67-14.33 32-32 32H64c-17.67 0-32-14.33-32-32V160c0-17.67 14.33-32 32-32h112C184.8 128 192 120.8 192 112S184.8 96 176 96L64 96c-35.35 0-64 28.65-64 64V448c0 35.35 28.65 64 64 64h288c35.35 0 64-28.65 64-64v-112C416 327.2 408.8 320 400 320zM480 0h-111.1c-13 0-24.59 7.766-29.56 19.77s-2.25 25.69 6.938 34.86l44.67 44.67l-209.4 209.4c-6.25 6.25-6.25 16.38 0 22.62C183.8 334.4 187.9 336 192 336s8.188-1.562 11.31-4.688l209.4-209.4l44.68 44.68c6.156 6.125 14.28 9.375 22.59 9.375c4.125 0 8.312-.8125 12.28-2.453C504.3 168.5 512 156.1 512 143.1V32C512 14.36 497.7 0 480 0zM480 143.1l-112-111.1c0 0-.0938 0 0 0L480 32V143.1z"/></svg></div>
                     <div class="--card-h-title"><div class="--card-h-title-text">Popular</div></div>
-                    <div class="--card-h-x svg-container">
+                    <div title="close" class="--card-h-x svg-container">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M380.2 453.7c5.703 6.75 4.859 16.84-1.891 22.56C375.3 478.7 371.7 480 368 480c-4.547 0-9.063-1.938-12.23-5.657L192 280.8l-163.8 193.6C25.05 478.1 20.53 480 15.98 480c-3.641 0-7.313-1.25-10.31-3.781c-6.75-5.719-7.594-15.81-1.891-22.56l167.2-197.7L3.781 58.32c-5.703-6.75-4.859-16.84 1.891-22.56c6.75-5.688 16.83-4.813 22.55 1.875L192 231.2l163.8-193.6c5.703-6.688 15.8-7.563 22.55-1.875c6.75 5.719 7.594 15.81 1.891 22.56l-167.2 197.7L380.2 453.7z"/></svg>
                     </div>
                 </div>
@@ -156,6 +157,108 @@
                         
                     </div>
                 </div>
+            </div>
+            <div class="card">
+                    <div class="--card-h">
+                        <div title="open in new tab" class="card-h-newtab svg-container"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M400 288C391.2 288 384 295.2 384 304V448c0 17.67-14.33 32-32 32H64c-17.67 0-32-14.33-32-32V160c0-17.67 14.33-32 32-32h112C184.8 128 192 120.8 192 112S184.8 96 176 96L64 96c-35.35 0-64 28.65-64 64V448c0 35.35 28.65 64 64 64h288c35.35 0 64-28.65 64-64V304C416 295.2 408.8 288 400 288zM496 0h-160C327.2 0 320 7.156 320 16S327.2 32 336 32h121.4L180.7 308.7c-6.25 6.25-6.25 16.38 0 22.62C183.8 334.4 187.9 336 192 336s8.188-1.562 11.31-4.688L480 54.63V176C480 184.8 487.2 192 496 192S512 184.8 512 176v-160C512 7.156 504.8 0 496 0z"/></svg></div>
+                        <div class="--card-h-title"><div class="--card-h-title-text">Popular</div></div>
+                        <div title="close" class="--card-h-x svg-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M380.2 453.7c5.703 6.75 4.859 16.84-1.891 22.56C375.3 478.7 371.7 480 368 480c-4.547 0-9.063-1.938-12.23-5.657L192 280.8l-163.8 193.6C25.05 478.1 20.53 480 15.98 480c-3.641 0-7.313-1.25-10.31-3.781c-6.75-5.719-7.594-15.81-1.891-22.56l167.2-197.7L3.781 58.32c-5.703-6.75-4.859-16.84 1.891-22.56c6.75-5.688 16.83-4.813 22.55 1.875L192 231.2l163.8-193.6c5.703-6.688 15.8-7.563 22.55-1.875c6.75 5.719 7.594 15.81 1.891 22.56l-167.2 197.7L380.2 453.7z"/></svg>
+                        </div>
+                    </div>
+                    <div class="--card-container">
+                        <div class="--card-container-content">
+                            <div class="--card-container-content-icon">
+    
+                            </div>
+    
+                        </div>
+                        <div class="--card-container-content">
+                            <div class="--card-container-content-icon">
+    
+                            </div>
+                            
+                        </div>
+                        <div class="--card-container-content">
+                            <div class="--card-container-content-icon">
+    
+                            </div>
+                            
+                        </div>
+                        <div class="--card-container-content">
+                            <div class="--card-container-content-icon">
+    
+                            </div>
+    
+                        </div>
+                        <div class="--card-container-content">
+                            <div class="--card-container-content-icon">
+    
+                            </div>
+                            
+                        </div>
+                        <div class="--card-container-content">
+                            <div class="--card-container-content-icon">
+    
+                            </div>
+                            
+                        </div>
+                        <div class="--card-container-content">
+                            <div class="--card-container-content-icon">
+    
+                            </div>
+    
+                        </div>
+                        <div class="--card-container-content">
+                            <div class="--card-container-content-icon">
+    
+                            </div>
+                            
+                        </div>
+                        <div class="--card-container-content">
+                            <div class="--card-container-content-icon">
+    
+                            </div>
+                            
+                        </div>
+                        <div class="--card-container-content">
+                            <div class="--card-container-content-icon">
+    
+                            </div>
+    
+                        </div>
+                        <div class="--card-container-content">
+                            <div class="--card-container-content-icon">
+    
+                            </div>
+                            
+                        </div>
+                        <div class="--card-container-content">
+                            <div class="--card-container-content-icon">
+    
+                            </div>
+                            
+                        </div>
+                        <div class="--card-container-content">
+                            <div class="--card-container-content-icon">
+    
+                            </div>
+    
+                        </div>
+                        <div class="--card-container-content">
+                            <div class="--card-container-content-icon">
+    
+                            </div>
+                            
+                        </div>
+                        <div class="--card-container-content">
+                            <div class="--card-container-content-icon">
+    
+                            </div>
+                            
+                        </div>
+                    </div>
+            </div>
             
         </main>    
     </body>

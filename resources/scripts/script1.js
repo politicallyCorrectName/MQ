@@ -39,15 +39,46 @@ const createCard = (id) => {
 
 const header = document.querySelector('header');
 
-//hover, onclick, etc.
+//TODO has to be fixed when stuff besdies sidebar generates card on click
+
+
 const sidebarClickables = document.getElementsByClassName('--sidebar-clickable');
 
-for(let i = 0 ; i < sidebarClickables.length ; i += 1){
-    sidebarClickables[i].onclick = ((e) => {
-        let cE = sidebarClickables[i];
+
+
+const cardGeneratingClickables = [sidebarClickables];
+
+for(let j = 0 ; j < cardGeneratingClickables.length ; j += 1){
+
+
+
+
+
+    for(let i = 0 ; i < cardGeneratingClickables[0].length ; i += 1){
+
+        let cE = cardGeneratingClickables[0][i];
         let id = cE.id;
-        
-        console.log(id);
-        createCard(id);
-    })
+
+        cE.onclick = ((e) => {
+
+            cE.style.cursor = 'pointer';
+
+            if(cE.id != 'expand'){
+                createCard(id);
+            }
+        })
+        cE.onmouseover = ((e) => {
+            cE.style.border = 'var(--large-border)';
+
+        })
+        cE.onmouseleave = ((e) => {
+            cE.style.border = 'none';
+        })
+
+
+    }
 }
+
+
+
+
