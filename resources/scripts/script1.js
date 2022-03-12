@@ -31,6 +31,10 @@ const createCard = () => {
     
 }
 
-const sC = document.getElementsByClassName('--sidebar-clickable');
 const header = document.querySelector('header');
-header.onclick = createCard();
+header.addEventListener('click', (e) => {
+    createCard();
+})
+
+//hover, onclick, etc.
+
