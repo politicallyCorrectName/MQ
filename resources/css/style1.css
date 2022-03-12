@@ -23,7 +23,21 @@ body{
 header{
     grid-area: 1 / 2 / 2 / -1;
     background-color: var(--bgc-two);
+    display: flex;
+    align-items: center;
 
+}
+h1{
+    font-size: 3rem;
+    max-height: 80%;
+    margin: auto;
+}
+#search-bar{
+    width: 50vw;
+}
+#account-icon{
+    height: 100%;
+    aspect-ratio: 1 / 1;
 }
 #sidebar{
     z-index: 1;
@@ -64,9 +78,7 @@ svg{
     height: 50%;
     aspect-ratio: 1 / 1;
 }
-.two-one{
-    aspect-ratio: 2 / 1 !important;
-}
+
 main{
     grid-area: 2 / 2 / -1 / -1;
     overflow-y: scroll;
