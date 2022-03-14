@@ -1,3 +1,21 @@
+const h1 = document.querySelector('h1');
+const sidebarClickables = document.getElementsByClassName('--sidebar-clickable');
+const openInNewTab = document.getElementsByClassName('--card-h-newtab');
+const closeCard = document.getElementsByClassName('--card-h-x');
+const sidebar = document.getElementById('sidebar');
+const main = document.querySelector('main');
+const header = document.querySelector('header');
+const sidebarText = document.getElementsByClassName('--sidebar-clickable-text');
+const arrow = document.getElementById('expand');
+const accountIcon = document.getElementById('account');
+const settingsIcon = document.getElementById('settings');
+let cards = document.getElementsByClassName('card');
+accountIcon.onclick = (() => {
+    window.open('http://127.0.0.1:5500/account.html');
+})
+settingsIcon.onclick = (() => {
+    window.open('http://127.0.0.1:5500/settings.html');
+})
 
 
 const createCard = (id) => {
@@ -26,7 +44,8 @@ const createCard = (id) => {
 
 
 
-    main = document.querySelector('main');
+    const main = document.querySelector('main');
+    
     main.appendChild(card);
     card.appendChild(cardH);
     cardH.appendChild(cardHNewtab);
@@ -35,59 +54,55 @@ const createCard = (id) => {
     cardH.appendChild(cardHX);
     card.appendChild(cardContainer);
     
+    cards.push(card);
+}
+
+const clickables = [sidebarClickables, openInNewTab, closeCard];
+
+const windowIsSmall = window.matchMedia("(max-width: 14cm").matches;
+
+function destroye(parent) {
+    while (parent.firstChild) {
+        parent.removeChild(parent.firstChild);
+    }
+    parent.remove();
 }
 
 
-//TODO has to be fixed when stuff besdies sidebar generates card on click
+let test = 0;
+const ff = () => {
+    clickables.forEach((e) => {
+        console.log(e);
+        test+=1;
+        console.log(test);
+    })
+}
 
 
-const sidebarClickables = document.getElementsByClassName('--sidebar-clickable');
-const openInNewTab = document.getElementsByClassName('--card-h-newtab');
-const closeCard = document.getElementsByClassName('--card-h-x');
-const sidebar = document.getElementById('sidebar');
-const main = document.querySelector('main');
-const header = document.querySelector('header');
-const sidebarText = document.getElementsByClassName('--sidebar-clickable-text');
-const arrow = document.getElementById('expand');
-//
-const clickables = [sidebarClickables, openInNewTab, closeCard];
+//only works if clickables[0] is sidebar
+for(let a = 0 ; a < clickables[0].length ; a += 1){
+    let e = clickables[0][a];
+    e.onmouseover = (() => {
+        e.style.border = 'var(--large-border)';
+    })
+    e.onmouseleave = (() => {
+        e.style.border = 'none';
+    })
+    e.onclick = (() => {
+        createCard(e.id);
+    })
+}
 
-
-arrow.onclick = ((e) => {
-    /* target grid area => sidebar: 1 / 1 / -1 / 3; ; header: 1 / 3 / 2 / -1; main: 2 / 3 / -1 / -1;
-    */
-    sidebar.style.gridArea = '1 / 1 / -1 / 3';
-    header.style.gridArea = '1 / 3 / 2 / -1';
-    main.style.gridArea = '2 / 3 / -1 / -1';
-    arrow.id = 'collapse';
-    arrow.title = 'collapse';
-    
-    for(let k = 0 ; k < sidebarText.length ; k += 1){
-        console.log('ay');
-        sidebarText[k].style.display = 'flex';
+for(let b = 1 ; b < clickables.length ; b +=1){
+    for(let c = 0 ; c < clickables[b].length ; c +=1){
+        let e = clickables[b][c];
+        e.onmouseover = (() => {
+            e.style.border = 'var(--small-border)';
+        })
+        e.onmouseleave = (() => {
+            e.style.border = 'none';
+        })
     }
-    
-    arrow.style.cursor = 'pointer';
-
-    sidebarClickables.forEach((e) => {
-        e.style.width = '2.5cm';
-    })
-})
-
-
-
-    
-    cE.onclick = ((e) => {
-        cE.style.cursor = 'pointer';
-        if(cE.id != 'expand'){
-            createCard(id);
-        }
-    })
-    cE.onmouseover = ((e) => {
-        cE.style.border = 'var(--large-border)';
-    })
-    cE.onmouseleave = ((e) => {
-        cE.style.border = 'none';
-    })
+}
 
 

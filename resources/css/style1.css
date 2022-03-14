@@ -144,7 +144,7 @@ main{
     background-color: var(--bgc-three);
     display: grid;
     grid-template-columns: 1.3cm 1fr 2cm;
-    grid-template-rows: 1.3cm;
+    grid-template-rows: 100%;
 }
 .--card-h-newtab{
     grid-area: 1 / 1 / 2 / 2;
