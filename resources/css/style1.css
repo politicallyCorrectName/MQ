@@ -18,7 +18,7 @@ html{
 body{
     display: grid;
     grid-template-rows: 2.5cm 1fr;
-    grid-template-columns: 2.5cm 5cm 1fr;
+    grid-template-columns: 2.5cm 3cm 1fr;
     margin: 0;
     height: 100vh;
     gap: 1rem;
@@ -87,7 +87,7 @@ header > .svg-container{
     display: flex;
     width: 100%;
     height: 3cm;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 }
 .--sidebar-clickable:first-child{
@@ -100,8 +100,11 @@ header > .svg-container{
 .--sidebar-clickable-text{
     width: 5cm;
     height: 3cm;
+    font-size: 1.5rem;
     padding: auto 0;
     display: none;
+    justify-content: center;
+    align-items: center;
 }
 .svg-container{
     display: flex !important;
